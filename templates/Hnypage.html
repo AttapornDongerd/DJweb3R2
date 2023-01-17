@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<h1 class="bg-warning text-primary">Welcome to Winter</h1>
+<h2 class="bg-info text-danger">
+    Merry Christmas and Happy New Years
+</h2> <br><br><br>
+<p class="bg-secondary text-dark text-center">
+    <img src="{% static 'images/merry.jpg' %}"
+    class="rounded-circle" width="150px" height="150px"> <br>
+    กาลเวลาจะทำให้เราเป็นคนที่ดีขึ้น แต่ใจพังยับเยินเหมือนเดิม <br>
+    โลกนี้สอนให้รู้ว่าจริงใจกับใครไป ใช่ว่าเขาจะจริงใจกลับ <br>
+    - รศ.ดร.มิวกี้ -
+</p> <br><br>
+<p class="bg-success text-white text-center">
+    <img src="{% static 'images/pig.jpg' %}"
+    class="rounded-circle" width="150px" height="150px"> <br>
+    เหตุผลที่ต้องฆ่าเวลา เพราะเวลาทำให้เธอเปลี่ยนไป <br>
+    สิ่งที่กำลังจะมาถึง ย่อมดีกว่าที่สิ่งผ่านไปแล้วแน่นอน
+</p> <br>
+<ul class="list-group">
+    <li class="list-group-item-primary">สิ่งที่สนใจ:</li>
+    <li class="list-group-item">Game</li>
+    <li class="list-group-item">Movie</li>
+    <li class="list-group-item">Song</li>
+    <li class="list-group-item">Sleeping</li>
+    <li class="list-group-item">Eating</li>
+</ul> <br>
+
+<ol type="A" class="list-group">
+    <li class="list-group-item-warning">Favorites web site</li>
+    <li class="list-group-item"><a href="http://facebook.com" target="_blank">pythonanywhere</a></li>
+    <li class="list-group-item"><a href="http://www.pythonanywhere.com" target="_blank">pythonanywhere.com</a></li>
+    <li class="list-group-item"><a href="http://www.geeksforgeeks.org" target="_blank">geeksforgeeks.org</a></li>
+    <li class="list-group-item"><a href="http://www.3school.com" target="_blank">3school.com</a></li>
+    <li class="list-group-item"><a href="http://www.github.com" target="_blank">github.com</a></li>
+    <li class="list-group-item">
+        <a href="http://www.google.com" target="_blank">
+            <img src="{% static 'images/google.png' %}" width="100px" height="55px">
+        </a>
+    </li>
+</ol>
+<br>
+<p class="text-center">
+    <a href="{% url 'firstpage' %}" class="btn btn-primary">First page</a>
+    <a href="{% url 'secondpage' %}" class="btn btn-warning">second page</a>
+    <a href="{% url 'thirdpage' %}" class="btn btn-danger">Third page</a>
+</p>
+<br><br><br>
+{% endblock %}

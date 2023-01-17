@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="mt-4 p-5 bg-primary text-white rounded">
+    <h1>Welcome to DigiTech Technology and Service co., Ltd.</h1>
+    <h2>We help your company  to best digital business to future</h2>
+    <p>Oue company help you to up performance to best company, <b> <br>
+        we provide many service for transform you company to digital business <br>
+        with software , technology, network, data system to business intelligence
+    </b>
+    </p>
+</div>
+    <div class="text-center">
+    <div class="spinner-border text-muted"></div>
+    <div class="spinner-border text-primary"></div>
+    <div class="spinner-border text-success"></div>
+    <div class="spinner-border text-info"></div>
+    <div class="spinner-border text-warning"></div>
+    <div class="spinner-border text-danger"></div>
+    <div class="spinner-border text-secondary"></div>
+    <div class="spinner-border text-dark"></div>
+    <div class="spinner-border text-light"></div>
+    </div>
+    <div class="row">
+    <div class="col-lg-4">
+        <img src="{% static 'images/hny1.jpeg' %}"  width="150px" height="150px"
+        class="img-thumbnail">
+    </div>
+    <div class="col-lg-4">
+        <img src="{% static 'images/hny2.jpg' %}" width="150px" height="150px"
+        class="img-thumbnail">
+    </div>
+    <div class="col-lg-4">
+        <img src="{% static 'images/hny3.png' %}" width="150px" height="150px">
+    </div>
+    </div>
+{% endblock %}

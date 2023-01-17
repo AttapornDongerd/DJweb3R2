@@ -1,0 +1,19 @@
+{% load fontawesome_5 %}
+{% fontawesome_5_static %}
+<br>
+<ul class="list-group">
+    <li class="list-group-item active"><b>Menu:</b></li>
+    <li><a href="{% url 'home' %}" class="list-group-item list-group-item-action list-group-item-light text-primary">
+        <i class="fas fa-home"></i> Home </a></li>
+    <li><a href="{% url 'firstpage' %}"
+           class="list-group-item list-group-item-action list-group-item-light text-primary">
+        <i class="far fa-hand-rock"></i> First page </a></li>
+    <li><a href="{% url 'secondpage' %}"
+           class="list-group-item list-group-item-action list-group-item-light text-primary"> Second page </a></li>
+    <li><a href="{% url 'thirdpage' %}"
+           class="list-group-item list-group-item-action list-group-item-light text-primary"> Third page </a></li>
+    <li><a href="{% url 'Hnypage' %}" class="list-group-item list-group-item-action list-group-item-light text-primary">
+        Hny. page </a></li>
+    <li><a href="{% url 'testbt' %}" class="list-group-item list-group-item-action list-group-item-light text-primary">
+        testbt </a></li>
+</ul>
